@@ -1,0 +1,29 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "question":"Pregunta 1",
+            "selection":0
+        },
+        {
+            "id": 2,
+            "question": "Pregunta 2",
+            "selection": 0
+        },
+        {
+            "id": 3,
+            "question": "Pregunta 3",
+            "selection": 0
+        },
+        {
+            "id": 4,
+            "question": "Pregunta 4",
+            "selection": 0
+        },
+        {
+            "id": 5,
+            "question": "Pregunta 5",
+            "selection": 0
+        }
+    ]
+}

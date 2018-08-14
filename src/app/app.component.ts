@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-input-radio-example';
+  questions: any;
+  constructor(private http: HttpClient) {
+    this.http.get('assets/mock/question.mock.json').subscribe(
+      (data: any) => {
+        this.questions = data.questions;
+        console.log(this.questions);
+      },
+      err => {
+        console.log(err);
+      }
+    );
+  }
 }
